@@ -24,6 +24,10 @@
   src: url('fonts/Coffeemilk.otf') format('opentype');
 }
 
+@font-face {
+    font-family: 'CoffeeFont';
+    src: url('fonts/Coffee%20Bean.ttf') format('truetype');
+}
 
 body {
   margin: 0;
