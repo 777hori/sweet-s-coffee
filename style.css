@@ -77,10 +77,12 @@ nav a:hover {
   border-radius: 12px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
-/* Bigger poem font size */
-.poem-section p,
-.about-section p,
-.secret-section p {
-    font-size: 1.9em;  /* You can change this number */
-    line-height: 1.8;  /* Increases spacing so it’s easy to read */
+/* Bigger poem text for all pages */
+.poem, 
+.poem-section, 
+.about-section, 
+.secret-section, 
+.contact-poem {
+    font-size: 1.9em !important; /* Change number for bigger/smaller */
+    line-height: 1.7; /* Nice spacing for reading */
 }
