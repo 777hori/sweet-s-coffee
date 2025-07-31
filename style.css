@@ -45,6 +45,11 @@ header {
   padding: 15px 40px;
   color: white;
 }
+/* Make all headers not bold */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
 
 .brand {
   font-family: 'SweetCoffee';
