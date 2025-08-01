@@ -130,3 +130,17 @@ nav a:hover {
         opacity: 0;
     }
 }
+.confetti {
+    position: fixed;
+    top: -10px;
+    width: 8px;
+    height: 14px;
+    animation: fallConfetti linear forwards;
+}
+
+@keyframes fallConfetti {
+    to {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
