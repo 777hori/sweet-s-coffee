@@ -115,3 +115,18 @@ nav a:hover {
         opacity: 0;
     }
 }
+.big-heart {
+    position: fixed;
+    bottom: -30px;
+    font-size: 60px;
+    color: #ff6f91;
+    animation: riseBig linear forwards;
+    opacity: 0.6;
+}
+
+@keyframes riseBig {
+    to {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
