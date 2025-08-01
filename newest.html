@@ -66,6 +66,23 @@
     }
   </style>
 </head>
+<script>
+function createCoffeeSteam() {
+    const coffee = document.createElement('div');
+    coffee.classList.add('coffee-steam');
+    coffee.innerHTML = '☕';
+    coffee.style.left = Math.random() * 100 + 'vw';
+    coffee.style.animationDuration = (Math.random() * 3 + 3) + 's';
+    document.body.appendChild(coffee);
+
+    setTimeout(() => {
+        coffee.remove();
+    }, 6000);
+}
+
+setInterval(createCoffeeSteam, 500);
+</script>
+
 <body>
 
 <!-- Navigation -->
