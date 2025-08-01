@@ -59,6 +59,23 @@
     }
   </style>
 </head>
+  <script>
+function createBigHeart() {
+    const heart = document.createElement('div');
+    heart.classList.add('big-heart');
+    heart.innerHTML = '❤';
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.style.animationDuration = (Math.random() * 4 + 3) + 's';
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 7000);
+}
+
+setInterval(createBigHeart, 400);
+</script>
+
 <body>
 
 <!-- Navigation -->
