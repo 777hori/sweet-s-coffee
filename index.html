@@ -5,6 +5,23 @@
   <title>Sweet Coffees - Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
+<script>
+function createFallingHeart() {
+    const heart = document.createElement('div');
+    heart.classList.add('falling-heart');
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.style.animationDuration = (Math.random() * 3 + 2) + 's';
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 5000);
+}
+
+setInterval(createFallingHeart, 300);
+</script>
+
 <body>
 
 <!-- Navigation Bar -->
