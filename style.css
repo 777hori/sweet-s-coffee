@@ -86,3 +86,18 @@ nav a:hover {
     font-size: 1.9em !important; /* Change number for bigger/smaller */
     line-height: 1.7; /* Nice spacing for reading */
 }
+.falling-heart {
+    position: fixed;
+    top: -10px;
+    font-size: 18px;
+    color: #ffb6c1;
+    text-shadow: 0 0 5px white;
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
